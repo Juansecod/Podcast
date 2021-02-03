@@ -1,0 +1,24 @@
+.episodes {
+    background-image: $background-gradient;
+    h2 {
+        margin-left: 13.9%;
+        margin-bottom: 1.8%;
+        color: $secondary-font-color;
+    }
+}
+
+.container {
+    width: 86.1%;
+    margin-left: 6.9%;
+    margin-right: 6.9%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    gap: 5vw;
+    justify-content: stretch;
+    .podcast {
+        min-width: 298px;
+        width: 100%;
+        height: 100%;
+    }
+}

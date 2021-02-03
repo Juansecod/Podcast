@@ -1,0 +1,172 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*Variables en donde se guarda todas la paleta de colores*/
+/*Variables en donde se guarda el tamaño de las fuentes*/
+* {
+  font-family: 'IBM Plex Mono', monospace;
+  color: #060A24;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 48px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+header {
+  padding: 0.7% 6.9% 0.7% 6.9%;
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .logo {
+  width: 36px;
+  height: 36px;
+}
+
+ul {
+  width: 33.5%;
+  width: auto;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+li {
+  letter-spacing: 0;
+  line-height: 28px;
+  margin-right: 48px;
+}
+
+a:hover {
+  color: #00F3BB;
+  text-decoration: line-through;
+}
+
+.active {
+  color: rgba(6, 10, 36, 0.56);
+  text-decoration: line-through;
+}
+
+.banner {
+  margin-top: 8.3%;
+  margin-left: 13.9%;
+  margin-bottom: 5px;
+  font-size: 64px;
+}
+
+.banner p {
+  max-width: 628px;
+}
+
+.banner h1 {
+  display: inline-block;
+  max-width: 1200px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/*Caracteristicas de palabras especificas*/
+.world {
+  font-family: "IBM Plex Sans", sans-serif;
+  text-decoration: line-through;
+}
+
+.blue-dot {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #0000EC;
+}
+
+.btn-more-info {
+  border: none;
+  margin-top: 56px;
+  width: 225px;
+  height: 56px;
+  color: #060A24;
+  font-size: 18px;
+  background-color: #00F3BB;
+}
+
+.episodes {
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+}
+
+.episodes h2 {
+  margin-left: 13.9%;
+  margin-bottom: 1.8%;
+  color: #ffff;
+}
+
+.container {
+  width: 86.1%;
+  margin-left: 6.9%;
+  margin-right: 6.9%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-row: 1fr 1fr;
+  gap: 5vw;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+
+.container .podcast {
+  min-width: 298px;
+  width: 100%;
+  height: 100%;
+}
+
+.where-come {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.where-come img {
+  width: 457.6px;
+  height: auto;
+}
+
+.where-come .container-text {
+  margin-left: 4.3%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  max-width: 464px;
+}
+
+.where-come h2 {
+  margin-bottom: 24px;
+}
+
+.where-come p {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=style.css.map */
