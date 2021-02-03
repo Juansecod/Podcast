@@ -213,8 +213,8 @@ a:hover {
       grid-template-areas: "theme1 theme2 theme3 theme4" "theme1 theme2 theme3 theme4";
   -ms-grid-rows: 130px 64px;
       grid-template-rows: 130px 64px;
-  -ms-grid-columns: (260px)[4];
-      grid-template-columns: repeat(4, 260px);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   font-size: 24px;
   text-align: center;

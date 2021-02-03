@@ -10,7 +10,7 @@
     display: grid;
     grid-template-areas: "theme1 theme2 theme3 theme4" "theme1 theme2 theme3 theme4";
     grid-template-rows: 130px 64px;
-    grid-template-columns: repeat(4, 260px);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     font-size: $font-size-themes;
     text-align: center;
