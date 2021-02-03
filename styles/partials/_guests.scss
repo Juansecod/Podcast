@@ -1,0 +1,14 @@
+.guests {
+    h2 {
+        margin-bottom: 2.5%;
+    }
+}
+
+.galery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 9.3% 9.3%;
+    img {
+        width: 100%;
+    }
+}

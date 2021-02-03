@@ -1,7 +1,6 @@
 .banner {
     margin-top: 8.3%;
     margin-left: 13.9%;
-    margin-bottom: 5px;
     font-size: $font-size-h1;
     p {
         max-width: 628px;
@@ -34,4 +33,11 @@
     color: $font-color;
     font-size: $font-size-btn;
     background-color: $secondary-color;
+    cursor: pointer;
+}
+
+.btn-more-info:hover {
+    background-image: $btn-hover;
+    cursor: pointer;
+    color: $secondary-font-color;
 }
