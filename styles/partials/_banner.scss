@@ -26,18 +26,12 @@
 }
 
 .btn-more-info {
-    border: none;
     margin-top: 56px;
     width: 225px;
     height: 56px;
-    color: $font-color;
-    font-size: $font-size-btn;
-    background-color: $secondary-color;
-    cursor: pointer;
+    @extend %btn-common-properties;
 }
 
 .btn-more-info:hover {
-    background-image: $btn-hover;
-    cursor: pointer;
-    color: $secondary-font-color;
+    @extend %btn-hover;
 }

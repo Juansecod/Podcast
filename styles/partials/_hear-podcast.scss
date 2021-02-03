@@ -1,0 +1,24 @@
+.hear-podcast {
+    width: 100%;
+    background-image: $background-gradient;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10.5%;
+    max-height: 518px;
+    h2 {
+        color: $secondary-font-color;
+        margin: 0;
+        margin-bottom: 2.5%;
+    }
+}
+
+.btn-hear-podcast {
+    @extend %btn-common-properties;
+    width: 345px;
+    height: 56px;
+}
+
+.btn-hear-podcast:hover {
+    @extend %btn-hover;
+}

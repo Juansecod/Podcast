@@ -20,3 +20,16 @@ $font-size-themes:24px;
 $font-family-h: 'IBM Plex Sans',
 sans-serif;
 ;
+%btn-common-properties {
+    color: $font-color;
+    font-size: $font-size-btn;
+    background-color: $secondary-color;
+    cursor: pointer;
+    border: none;
+}
+
+%btn-hover {
+    background-image: $btn-hover;
+    cursor: pointer;
+    color: $secondary-font-color;
+}
