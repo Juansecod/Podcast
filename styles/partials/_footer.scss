@@ -4,8 +4,26 @@ footer {
     margin-left: 6.9%;
     margin-right: 6.9%;
     margin-bottom: 31px;
+    a {
+        width: 20px;
+        height: 30px;
+    }
+    a:hover {
+        i {
+            color: $primary-color;
+        }
+    }
 }
 
 .container-social-networks {
-    display: inline-block;
+    width: 20%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2.5%;
+}
+
+i {
+    width: 18px;
+    height: 28px;
+    color: $font-color;
 }

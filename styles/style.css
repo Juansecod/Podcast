@@ -291,7 +291,27 @@ footer {
   margin-bottom: 31px;
 }
 
+footer a {
+  width: 20px;
+  height: 30px;
+}
+
+footer a:hover i {
+  color: #0000EC;
+}
+
 .container-social-networks {
-  display: inline-block;
+  width: 20%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  gap: 2.5%;
+}
+
+i {
+  width: 18px;
+  height: 28px;
+  color: #060A24;
 }
 /*# sourceMappingURL=style.css.map */
