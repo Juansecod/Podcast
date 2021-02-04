@@ -4,20 +4,36 @@
         margin-bottom: 1.8%;
         color: $secondary-font-color;
     }
+    .svg1 {
+        transform: rotate(180deg);
+        position: relative;
+        top: -0.1vh;
+        width: 100%;
+        height: 4.8vw;
+        margin-bottom: 5%;
+    }
+    .svg2 {
+        position: relative;
+        top: 0.7vh;
+        width: 100%;
+        height: 15vh;
+    }
 }
 
 .container-podcast {
     width: 86.1%;
     margin-left: 6.9%;
     margin-right: 6.9%;
+    padding-bottom: 10%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row: 1fr 1fr;
+    grid-auto-rows: auto;
     gap: 5vw;
     justify-content: stretch;
     .podcast {
+        border: none;
         min-width: 298px;
         width: 100%;
-        height: 100%;
+        height: 232px;
     }
 }

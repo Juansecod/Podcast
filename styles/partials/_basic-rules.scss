@@ -1,29 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
-* {
-    font-family: 'IBM Plex Mono', monospace;
-    color: $font-color;
-}
-
-p {
-    font-size: $font-size-desktop;
-}
-
-a {
-    font-size: $font-size-desktop;
-    text-decoration: none;
-}
-
-h2 {
-    font-size: $font-size-h;
-    font-family: $font-family-h;
-    margin-left: 13.9%;
-}
-
-section {
-    margin-top: 4.4%;
-}
-
-main {
-    margin-bottom: 34px;
-}
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
+        * {
+            font-family: 'IBM Plex Mono', monospace;
+            color: $font-color;
+        }
+        /*Estilos del scrollbar*/
+        
+        body::-webkit-scrollbar {
+            width: 10px;
+        }
+        /* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+        
+        body::-webkit-scrollbar-thumb {
+            background: $background-gradient;
+            border-radius: 4px;
+        }
+        /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+        
+        body::-webkit-scrollbar-thumb:hover {
+            background: $btn-hover;
+            box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+        }
+        /* Ponemos un color de fondo y redondeamos las esquinas del track */
+        
+        body::-webkit-scrollbar-track {
+            background: $secondary-font-color;
+            border-radius: 4px;
+        }
+        /* Cambiamos el fondo cuando esté en active o hover */
+        
+        body::-webkit-scrollbar-track:hover,
+        body::-webkit-scrollbar-track:active {
+            background: #d4d4d4;
+        }
+        /*Reglas basicas para algunas etiquetas*/
+        
+        p {
+            font-size: $font-size-desktop;
+        }
+        
+        a {
+            font-size: $font-size-desktop;
+            text-decoration: none;
+        }
+        
+        h2 {
+            font-size: $font-size-h;
+            font-family: $font-family-h;
+            margin-left: 13.9%;
+        }
+        
+        section {
+            margin-top: 4.4%;
+        }
+        
+        main {
+            margin-bottom: 34px;
+        }

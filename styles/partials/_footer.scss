@@ -5,12 +5,17 @@ footer {
     margin-right: 6.9%;
     margin-bottom: 31px;
     a {
-        width: 20px;
-        height: 30px;
+        padding-top: 5px;
+        width: 100%;
+        height: auto;
+        text-align: center;
     }
     a:hover {
         i {
-            color: $primary-color;
+            background: $btn-hover;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: scale(1.5);
         }
     }
 }

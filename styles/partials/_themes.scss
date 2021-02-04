@@ -1,4 +1,6 @@
 .themes {
+    position: relative;
+    top: -18vh;
     h2 {
         margin-bottom: 3.9%;
     }
@@ -8,7 +10,6 @@
     margin-left: 13.9%;
     margin-right: 13.9%;
     display: grid;
-    grid-template-areas: "theme1 theme2 theme3 theme4" "theme1 theme2 theme3 theme4";
     grid-template-rows: 130px 64px;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;

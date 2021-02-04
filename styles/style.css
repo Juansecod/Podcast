@@ -22,6 +22,8 @@
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   cursor: pointer;
   color: #ffff;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 * {
@@ -29,6 +31,37 @@
   color: #060A24;
 }
 
+/*Estilos del scrollbar*/
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+body::-webkit-scrollbar-track {
+  background: #ffff;
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+body::-webkit-scrollbar-track:hover,
+body::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
+/*Reglas basicas para algunas etiquetas*/
 p {
   font-size: 16px;
 }
@@ -66,6 +99,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 2;
 }
 
 header .logo {
@@ -140,15 +174,33 @@ a:hover {
   color: #ffff;
 }
 
+.episodes .svg1 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: relative;
+  top: -0.1vh;
+  width: 100%;
+  height: 4.8vw;
+  margin-bottom: 5%;
+}
+
+.episodes .svg2 {
+  position: relative;
+  top: 0.7vh;
+  width: 100%;
+  height: 15vh;
+}
+
 .container-podcast {
   width: 86.1%;
   margin-left: 6.9%;
   margin-right: 6.9%;
+  padding-bottom: 10%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  grid-row: 1fr 1fr;
+  grid-auto-rows: auto;
   gap: 5vw;
   -webkit-box-pack: stretch;
       -ms-flex-pack: stretch;
@@ -156,12 +208,15 @@ a:hover {
 }
 
 .container-podcast .podcast {
+  border: none;
   min-width: 298px;
   width: 100%;
-  height: 100%;
+  height: 232px;
 }
 
 .where-come {
+  position: relative;
+  top: -15vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,6 +247,11 @@ a:hover {
   margin-bottom: 10px;
 }
 
+.guests {
+  position: relative;
+  top: -25vh;
+}
+
 .guests h2 {
   margin-bottom: 2.5%;
 }
@@ -208,6 +268,11 @@ a:hover {
   width: 100%;
 }
 
+.themes {
+  position: relative;
+  top: -18vh;
+}
+
 .themes h2 {
   margin-bottom: 3.9%;
 }
@@ -217,7 +282,6 @@ a:hover {
   margin-right: 13.9%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "theme1 theme2 theme3 theme4" "theme1 theme2 theme3 theme4";
   -ms-grid-rows: 130px 64px;
       grid-template-rows: 130px 64px;
   -ms-grid-columns: (1fr)[4];
@@ -265,13 +329,23 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 10.5%;
-  max-height: 518px;
+  /*max-height: 518px;*/
 }
 
 .hear-podcast h2 {
   color: #ffff;
   margin: 0;
   margin-bottom: 2.5%;
+}
+
+.hear-podcast svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: relative;
+  top: -0.1vh;
+  width: 100%;
+  height: 9vh;
+  margin-bottom: 5%;
 }
 
 .btn-hear-podcast {
@@ -292,12 +366,18 @@ footer {
 }
 
 footer a {
-  width: 20px;
-  height: 30px;
+  padding-top: 5px;
+  width: 100%;
+  height: auto;
+  text-align: center;
 }
 
 footer a:hover i {
-  color: #0000EC;
+  background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .container-social-networks {
