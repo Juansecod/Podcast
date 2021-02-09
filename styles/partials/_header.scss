@@ -1,3 +1,5 @@
+/*Estilos del header*/
+
 header {
     position: sticky;
     background-color: $secondary-font-color;
@@ -14,25 +16,31 @@ header {
     }
 }
 
-ul {
-    width: 33.5%;
-    width: auto;
-    list-style: none;
-    display: flex;
-}
 
-li {
-    letter-spacing: 0;
-    line-height: 28px;
-    margin-right: 48px;
-}
+/*Estilos de la barra de navegación*/
 
-a:hover {
-    color: $secondary-color;
-    text-decoration: line-through;
-}
-
-.active {
-    color: $font-color-active;
-    text-decoration: line-through;
+.navbar {
+    input,
+    span {
+        display: none;
+    }
+    ul {
+        width: 33.5%;
+        width: auto;
+        list-style: none;
+        display: flex;
+    }
+    li {
+        letter-spacing: 0;
+        line-height: 28px;
+        margin-right: 48px;
+    }
+    a:hover {
+        color: $secondary-color;
+        text-decoration: line-through;
+    }
+    .active {
+        color: $font-color-active;
+        text-decoration: line-through;
+    }
 }

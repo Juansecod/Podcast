@@ -1,0 +1,19 @@
+/*Estilos de la seccion De Donde Venimos Diseño mobile*/
+
+.where-come {
+    margin: 0;
+    height: auto;
+    flex-direction: column;
+    top: -20vw;
+    img {
+        width: 100%;
+    }
+    .container-text {
+        margin-top: 0;
+        margin-right: 4.9%;
+    }
+    h2 {
+        margin-bottom: 8px;
+        line-height: 42px;
+    }
+}

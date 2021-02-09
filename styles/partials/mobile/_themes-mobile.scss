@@ -1,0 +1,25 @@
+/*Estilos de la seccion Temas Diseño mobile*/
+
+.themes {
+    top: -3vw;
+    h2 {
+        margin-left: 4.9%;
+    }
+}
+
+.container-themes {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    margin-left: 4.9%;
+    margin-right: 4.9%;
+    gap: 13px;
+}
+
+.text-theme1,
+.text-theme2,
+.text-theme3,
+.text-theme4 {
+    grid-row-start: auto;
+    grid-row-end: auto;
+    margin-bottom: 46px;
+}

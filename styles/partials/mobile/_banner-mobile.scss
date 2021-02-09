@@ -1,0 +1,24 @@
+/*Estilos de la seccion Banner Diseño mobile*/
+
+.banner {
+    margin-left: 4.9%;
+    margin-right: 4.9%;
+    margin-bottom: 7.3%;
+    h1 {
+        font-size: $font-size-h-mobile;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+.btn-more-info {
+    margin-top: 36px;
+    width: 225px;
+    height: 48px;
+    font-size: $font-size-desktop;
+}
+
+.btn-more-info:hover {
+    transform: scale(1);
+}

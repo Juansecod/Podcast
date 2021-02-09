@@ -1,5 +1,8 @@
 @import './partials/reset';
 @import './partials/variables';
+
+/*Diseño Desktop*/
+
 @import './partials/basic-rules';
 @import './partials/header';
 @import './partials/banner';
@@ -9,3 +12,17 @@
 @import './partials/themes';
 @import './partials/hear-podcast';
 @import './partials/footer';
+
+/*Diseño Responsive para movil*/
+
+@media screen and (max-width: 768px) {
+    @import './partials/mobile/basic-rules-mobiles';
+    @import './partials/mobile/header-mobile';
+    @import './partials/mobile/banner-mobile';
+    @import './partials/mobile/episodes';
+    @import './partials/mobile/where-come-mobile';
+    @import './partials/mobile/guests-mobile';
+    @import './partials/mobile/themes-mobile';
+    @import './partials/mobile/hear-podcast-mobile';
+    @import './partials/mobile/footer-mobile';
+}

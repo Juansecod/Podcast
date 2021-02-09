@@ -1,0 +1,21 @@
+/*Estilos de la seccion Escuchar Podcast Diseño mobile*/
+
+.hear-podcast {
+    svg {
+        height: 15vw;
+    }
+    h2 {
+        text-align: center;
+        margin: 5% 4.9% 11.3% 4.9%;
+    }
+}
+
+.btn-hear-podcast {
+    width: 288px;
+    height: 48px;
+    font-size: $font-size-desktop;
+}
+
+.btn-hear-podcast:hover {
+    transform: scale(1);
+}

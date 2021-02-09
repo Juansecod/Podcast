@@ -26,6 +26,7 @@
           transform: scale(1.2);
 }
 
+/*Diseño Desktop*/
 * {
   font-family: 'IBM Plex Mono', monospace;
   color: #060A24;
@@ -85,6 +86,7 @@ main {
   margin-bottom: 34px;
 }
 
+/*Estilos del header*/
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -107,7 +109,13 @@ header .logo {
   height: 36px;
 }
 
-ul {
+/*Estilos de la barra de navegación*/
+.navbar input,
+.navbar span {
+  display: none;
+}
+
+.navbar ul {
   width: 33.5%;
   width: auto;
   list-style: none;
@@ -116,22 +124,23 @@ ul {
   display: flex;
 }
 
-li {
+.navbar li {
   letter-spacing: 0;
   line-height: 28px;
   margin-right: 48px;
 }
 
-a:hover {
+.navbar a:hover {
   color: #00F3BB;
   text-decoration: line-through;
 }
 
-.active {
+.navbar .active {
   color: rgba(6, 10, 36, 0.56);
   text-decoration: line-through;
 }
 
+/*Estilos de la seccion Banner*/
 .banner {
   margin-top: 8.3%;
   margin-left: 13.9%;
@@ -165,6 +174,7 @@ a:hover {
   height: 56px;
 }
 
+/*Estilos de la seccion Episodios*/
 .episodes {
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
 }
@@ -180,7 +190,7 @@ a:hover {
   position: relative;
   top: -0.1vh;
   width: 100%;
-  height: 4.8vw;
+  height: 20vh;
   margin-bottom: 5%;
 }
 
@@ -188,7 +198,7 @@ a:hover {
   position: relative;
   top: 0.7vh;
   width: 100%;
-  height: 15vh;
+  height: 20vh;
 }
 
 .container-podcast {
@@ -214,6 +224,7 @@ a:hover {
   height: 232px;
 }
 
+/*Estilos de la seccion De Donde Venimos*/
 .where-come {
   position: relative;
   top: -15vw;
@@ -247,6 +258,7 @@ a:hover {
   margin-bottom: 10px;
 }
 
+/*Estilos de la seccion Invitados*/
 .guests {
   position: relative;
   top: -25vh;
@@ -268,6 +280,7 @@ a:hover {
   width: 100%;
 }
 
+/*Estilos de la seccion Temas*/
 .themes {
   position: relative;
   top: -18vh;
@@ -286,6 +299,7 @@ a:hover {
       grid-template-rows: 130px 64px;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
   justify-items: center;
   font-size: 24px;
   text-align: center;
@@ -315,6 +329,7 @@ a:hover {
   grid-row-end: 3;
 }
 
+/*Estilos de la seccion Escuchar Podcast*/
 .hear-podcast {
   width: 100%;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
@@ -329,7 +344,6 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 10.5%;
-  /*max-height: 518px;*/
 }
 
 .hear-podcast h2 {
@@ -344,7 +358,7 @@ a:hover {
   position: relative;
   top: -0.1vh;
   width: 100%;
-  height: 9vh;
+  height: 20vh;
   margin-bottom: 5%;
 }
 
@@ -353,6 +367,7 @@ a:hover {
   height: 56px;
 }
 
+/*Estilos del Footer*/
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -393,5 +408,291 @@ i {
   width: 18px;
   height: 28px;
   color: #060A24;
+}
+
+/*Diseño Responsive para movil*/
+@media screen and (max-width: 768px) {
+  /*Reglas basicas para algunas etiquetas en el diseño mobile*/
+  p {
+    font-size: 14px;
+  }
+  a {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 36px;
+    margin-left: 4.9%;
+  }
+  /*Estilos del header Diseño mobile*/
+  header {
+    height: 46px;
+  }
+  .navbar {
+    padding-top: 7.5px;
+  }
+  .navbar input {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    width: 25px;
+    height: 27px;
+  }
+  .navbar span {
+    display: block;
+    width: 25px;
+    height: 2.5px;
+    margin-bottom: 6.5px;
+    background: #060A24;
+    z-index: 1;
+    -webkit-transform-origin: 3px 0px;
+            transform-origin: 3px 0px;
+  }
+  .navbar span:first-child {
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  .navbar span:nth-last-child(2) {
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+  }
+  .navbar ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: none;
+  }
+  .navbar ul .li-active {
+    background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  }
+  .navbar ul .li-active .active {
+    color: rgba(6, 10, 36, 0.56);
+  }
+  .navbar ul li {
+    height: -100px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    background-color: #0000EC;
+  }
+  .navbar ul li:nth-last-child(4) {
+    position: absolute;
+    top: 46px;
+    left: 0px;
+    width: 100vw;
+  }
+  .navbar ul li:nth-last-child(4) a {
+    color: #ffff;
+  }
+  .navbar ul li:nth-last-child(3) {
+    position: absolute;
+    top: 122px;
+    left: 0px;
+    width: 100vw;
+  }
+  .navbar ul li:nth-last-child(3) a {
+    color: #ffff;
+  }
+  .navbar ul li:nth-last-child(2) {
+    position: absolute;
+    top: 198px;
+    left: 0px;
+    width: 100vw;
+  }
+  .navbar ul li:nth-last-child(2) a {
+    color: #ffff;
+  }
+  .navbar ul li:nth-last-child(1) {
+    position: absolute;
+    top: 274px;
+    left: 0px;
+    width: 100vw;
+  }
+  .navbar ul li:nth-last-child(1) a {
+    color: #ffff;
+  }
+  /*Animaciones y propiedades para el menu activo*/
+  input[type="checkbox"]:checked ~ ul {
+    -webkit-transition-property: display;
+    transition-property: display;
+    -webkit-transition-duration: 5s;
+            transition-duration: 5s;
+    display: block;
+  }
+  input[type="checkbox"]:checked ~ ul li {
+    height: auto;
+  }
+  input:checked ~ span {
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    -webkit-transform: rotate(45deg) translate(2px, 1px);
+            transform: rotate(45deg) translate(2px, 1px);
+  }
+  input:checked ~ span:nth-last-child(2) {
+    -webkit-transform: rotate(-45deg) translate(1px, 0px);
+            transform: rotate(-45deg) translate(1px, 0px);
+  }
+  input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+            transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  /*Estilos de la seccion Banner Diseño mobile*/
+  .banner {
+    margin-left: 4.9%;
+    margin-right: 4.9%;
+    margin-bottom: 7.3%;
+  }
+  .banner h1 {
+    font-size: 36px;
+  }
+  .banner p {
+    margin: 0;
+  }
+  .btn-more-info {
+    margin-top: 36px;
+    width: 225px;
+    height: 48px;
+    font-size: 16px;
+  }
+  .btn-more-info:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  /*Estilos de la seccion Episodios Diseño mobile*/
+  .episodes .svg1 {
+    min-height: 64px;
+    height: 15vw;
+  }
+  .episodes .svg2 {
+    min-height: 50px;
+    height: 15vw;
+  }
+  .container-podcast {
+    margin-left: 4.9%;
+    margin-right: 4.9%;
+    -ms-grid-columns: 92vw;
+        grid-template-columns: 92vw;
+    gap: 0;
+    padding-bottom: 93.5px;
+  }
+  .container-podcast .podcast {
+    height: 225px;
+  }
+  /*Estilos de la seccion De Donde Venimos Diseño mobile*/
+  .where-come {
+    margin: 0;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: -20vw;
+  }
+  .where-come img {
+    width: 100%;
+  }
+  .where-come .container-text {
+    margin-top: 0;
+    margin-right: 4.9%;
+  }
+  .where-come h2 {
+    margin-bottom: 8px;
+    line-height: 42px;
+  }
+  /*Estilos de la seccion Invitados Diseño mobile*/
+  .guests {
+    position: relative;
+    top: -10vw;
+  }
+  .galery {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  /*Estilos de la seccion Temas Diseño mobile*/
+  .themes {
+    top: -3vw;
+  }
+  .themes h2 {
+    margin-left: 4.9%;
+  }
+  .container-themes {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    margin-left: 4.9%;
+    margin-right: 4.9%;
+    gap: 13px;
+  }
+  .text-theme1,
+  .text-theme2,
+  .text-theme3,
+  .text-theme4 {
+    -ms-grid-row: auto;
+        grid-row-start: auto;
+    grid-row-end: auto;
+    margin-bottom: 46px;
+  }
+  /*Estilos de la seccion Escuchar Podcast Diseño mobile*/
+  .hear-podcast svg {
+    height: 15vw;
+  }
+  .hear-podcast h2 {
+    text-align: center;
+    margin: 5% 4.9% 11.3% 4.9%;
+  }
+  .btn-hear-podcast {
+    width: 288px;
+    height: 48px;
+    font-size: 16px;
+  }
+  .btn-hear-podcast:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  /*Estilos del Footer Diseño mobile*/
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  footer p {
+    margin-bottom: 4.9%;
+  }
+  footer a:hover i {
+    background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .container-social-networks {
+    width: 70.9%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  i {
+    width: 14px;
+    height: 28px;
+    color: #060A24;
+  }
 }
 /*# sourceMappingURL=style.css.map */

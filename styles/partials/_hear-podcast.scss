@@ -1,3 +1,5 @@
+/*Estilos de la seccion Escuchar Podcast*/
+
 .hear-podcast {
     width: 100%;
     background-image: $background-gradient;
@@ -5,7 +7,6 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 10.5%;
-    /*max-height: 518px;*/
     h2 {
         color: $secondary-font-color;
         margin: 0;
@@ -16,9 +17,8 @@
         position: relative;
         top: -0.1vh;
         width: 100%;
-        height: 9vh;
+        height: 20vh;
         margin-bottom: 5%
-        /* set height to pixels if you want angle to change with screen width */
     }
 }
 

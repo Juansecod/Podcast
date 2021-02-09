@@ -1,0 +1,23 @@
+/*Estilos de la seccion Episodios Diseño mobile*/
+
+.episodes {
+    .svg1 {
+        min-height: 64px;
+        height: 15vw;
+    }
+    .svg2 {
+        min-height: 50px;
+        height: 15vw;
+    }
+}
+
+.container-podcast {
+    margin-left: 4.9%;
+    margin-right: 4.9%;
+    grid-template-columns: 92vw;
+    gap: 0;
+    padding-bottom: 93.5px;
+    .podcast {
+        height: 225px;
+    }
+}

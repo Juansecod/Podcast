@@ -1,0 +1,32 @@
+/*Estilos del Footer Diseño mobile*/
+
+footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    p {
+        margin-bottom: 4.9%;
+    }
+    a:hover {
+        i {
+            background: $btn-hover;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: scale(1);
+        }
+    }
+}
+
+.container-social-networks {
+    width: 70.9%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-evenly;
+}
+
+i {
+    width: 14px;
+    height: 28px;
+    color: $font-color;
+}
