@@ -21,6 +21,7 @@ header {
         background: $font-color;
         z-index: 1;
         transform-origin: 3px 0px;
+        transition: transform 0.5s ease, opacity 0.55s ease;
     }
     span:first-child {
         transform-origin: 0% 0%;
