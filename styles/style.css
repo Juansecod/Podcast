@@ -521,11 +521,31 @@ i {
     color: #ffff;
   }
   /*Animaciones y propiedades para el menu activo*/
+  @-webkit-keyframes display {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes display {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   input[type="checkbox"]:checked ~ ul {
     display: block;
   }
   input[type="checkbox"]:checked ~ ul li {
     height: auto;
+    -webkit-animation-name: display;
+            animation-name: display;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
   }
   input:checked ~ span {
     -webkit-transition-property: -webkit-transform;

@@ -87,10 +87,21 @@ header {
 
 /*Animaciones y propiedades para el menu activo*/
 
+@keyframes display {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 input[type="checkbox"]:checked~ul {
     display: block;
     li {
         height: auto;
+        animation-name: display;
+        animation-duration: 0.5s;
     }
 }
 
