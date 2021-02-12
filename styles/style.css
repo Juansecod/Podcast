@@ -522,10 +522,6 @@ i {
   }
   /*Animaciones y propiedades para el menu activo*/
   input[type="checkbox"]:checked ~ ul {
-    -webkit-transition-property: display;
-    transition-property: display;
-    -webkit-transition-duration: 5s;
-            transition-duration: 5s;
     display: block;
   }
   input[type="checkbox"]:checked ~ ul li {

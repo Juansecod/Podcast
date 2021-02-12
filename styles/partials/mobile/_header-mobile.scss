@@ -88,8 +88,6 @@ header {
 /*Animaciones y propiedades para el menu activo*/
 
 input[type="checkbox"]:checked~ul {
-    transition-property: display;
-    transition-duration: 5s;
     display: block;
     li {
         height: auto;
