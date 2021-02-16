@@ -1,6 +1,8 @@
 /*Estilos de la seccion Invitados*/
 
 .guests {
+    animation-name: opacity;
+    animation-duration: 2.5s;
     position: relative;
     top: -25vh;
     h2 {

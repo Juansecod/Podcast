@@ -1,6 +1,8 @@
 /*Estilos de la seccion Banner*/
 
 .banner {
+    animation-name: opacity;
+    animation-duration: 2.5s;
     margin-top: 8.3%;
     margin-left: 13.9%;
     font-size: $font-size-h1;

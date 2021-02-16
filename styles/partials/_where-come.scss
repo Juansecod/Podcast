@@ -1,6 +1,8 @@
 /*Estilos de la seccion De Donde Venimos*/
 
 .where-come {
+    animation-name: opacity;
+    animation-duration: 2.5s;
     position: relative;
     top: -15vw;
     display: flex;

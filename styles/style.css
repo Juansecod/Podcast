@@ -91,6 +91,32 @@ main {
   margin-bottom: 34px;
 }
 
+/*Animacion de opacidad*/
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    -webkit-transition: opacity;
+    transition: opacity;
+    -webkit-transition-duration: 5s;
+            transition-duration: 5s;
+    opacity: 1;
+  }
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    -webkit-transition: opacity;
+    transition: opacity;
+    -webkit-transition-duration: 5s;
+            transition-duration: 5s;
+    opacity: 1;
+  }
+}
+
 /*Estilos del header*/
 header {
   position: -webkit-sticky;
@@ -147,6 +173,10 @@ header .logo {
 
 /*Estilos de la seccion Banner*/
 .banner {
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
   margin-top: 8.3%;
   margin-left: 13.9%;
   font-size: 64px;
@@ -181,6 +211,10 @@ header .logo {
 
 /*Estilos de la seccion Episodios*/
 .episodes {
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
 }
 
@@ -231,6 +265,10 @@ header .logo {
 
 /*Estilos de la seccion De Donde Venimos*/
 .where-come {
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
   position: relative;
   top: -15vw;
   display: -webkit-box;
@@ -265,6 +303,10 @@ header .logo {
 
 /*Estilos de la seccion Invitados*/
 .guests {
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
   position: relative;
   top: -25vh;
 }
@@ -287,6 +329,10 @@ header .logo {
 
 /*Estilos de la seccion Temas*/
 .themes {
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
   position: relative;
   top: -18vh;
 }
@@ -336,6 +382,10 @@ header .logo {
 
 /*Estilos de la seccion Escuchar Podcast*/
 .hear-podcast {
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
   width: 100%;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   display: -webkit-box;
@@ -374,6 +424,10 @@ header .logo {
 
 /*Estilos del Footer*/
 footer {
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -1,6 +1,8 @@
 /*Estilos de la seccion Episodios*/
 
 .episodes {
+    animation-name: opacity;
+    animation-duration: 2.5s;
     background-image: $background-gradient;
     h2 {
         margin-bottom: 1.8%;
