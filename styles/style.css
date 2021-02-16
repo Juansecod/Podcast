@@ -693,6 +693,7 @@ i {
     top: -10vw;
   }
   .galery {
+    width: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
