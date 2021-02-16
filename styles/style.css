@@ -37,6 +37,10 @@
   color: #060A24;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /*Estilos del scrollbar*/
 body::-webkit-scrollbar {
   width: 10px;

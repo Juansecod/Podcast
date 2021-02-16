@@ -4,6 +4,10 @@
             font-family: 'IBM Plex Mono', monospace;
             color: $font-color;
         }
+        
+        body {
+            overflow-x: hidden;
+        }
         /*Estilos del scrollbar*/
         
         body::-webkit-scrollbar {
