@@ -473,6 +473,9 @@ i {
 /*Diseño Responsive para movil*/
 @media screen and (max-width: 425px) {
   /*Reglas basicas para algunas etiquetas en el diseño mobile*/
+  body {
+    min-width: 320px;
+  }
   p {
     font-size: 14px;
   }
@@ -693,14 +696,15 @@ i {
     top: -10vw;
   }
   .galery {
-    width: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .galery img {
+    width: 100%;
+    height: auto;
   }
   /*Estilos de la seccion Temas Diseño mobile*/
   .themes {
@@ -800,6 +804,9 @@ i {
 
 @media screen and (max-width: 768px) {
   /*Reglas basicas para algunas etiquetas en el diseño mobile*/
+  body {
+    min-width: 320px;
+  }
   p {
     font-size: 14px;
   }
