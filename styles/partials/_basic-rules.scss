@@ -4,10 +4,6 @@
             font-family: 'IBM Plex Mono', monospace;
             color: $font-color;
         }
-        
-        body {
-            overflow-x: hidden;
-        }
         /*Estilos del scrollbar*/
         
         body::-webkit-scrollbar {
@@ -59,7 +55,6 @@
         }
         
         main {
-            width: 100%;
             margin-bottom: 34px;
         }
         /*Animacion de opacidad*/
