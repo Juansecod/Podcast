@@ -16,7 +16,7 @@
     display: grid;
     grid-template-rows: 130px 64px;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 10px;
+    grid-row-gap: 20px;
     justify-items: center;
     font-size: $font-size-themes;
     text-align: center;

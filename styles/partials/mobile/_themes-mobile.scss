@@ -8,18 +8,27 @@
 }
 
 .container-themes {
-    grid-template-columns: repeat(1, 1fr);
+    /*grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
+    gap: 13px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-left: 4.9%;
     margin-right: 4.9%;
-    gap: 13px;
+}
+
+img {
+    min-width: 104px;
+    width: 32.5vw;
+    height: 32.5vw;
 }
 
 .text-theme1,
 .text-theme2,
 .text-theme3,
-.text-theme4 {
-    grid-row-start: auto;
-    grid-row-end: auto;
+.text-theme4,
+{
     margin-bottom: 46px;
 }

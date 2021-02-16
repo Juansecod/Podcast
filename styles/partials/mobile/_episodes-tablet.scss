@@ -1,0 +1,23 @@
+/*Estilos de la seccion Episodios Diseño mobile exclusivo para tablets*/
+
+.episodes {
+    .svg1 {
+        min-height: 64px;
+        height: 15vw;
+    }
+    .svg2 {
+        min-height: 50px;
+        height: 15vw;
+    }
+}
+
+.container-podcast {
+    margin-left: 4.9%;
+    margin-right: 4.9%;
+    max-width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    .podcast {
+        height: 250px;
+    }
+}

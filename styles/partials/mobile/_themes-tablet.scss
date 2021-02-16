@@ -1,0 +1,40 @@
+/*Estilos de la seccion Temas Diseño mobile exclusivo para tablets*/
+
+.themes {
+    position: relative;
+    top: -12vh;
+}
+
+.container-themes {
+    margin-left: 13.9%;
+    margin-right: 13.9%;
+    display: grid;
+    grid-template-rows: 130px 64px 130px 64px;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 10px;
+    justify-items: center;
+    font-size: $font-size-themes;
+    text-align: center;
+}
+
+img[src='./assets/img/icon3.svg'] {
+    padding-top: 10px;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.text-theme3 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+img[src='./assets/img/icon4.svg'] {
+    padding-top: 10px;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.text-theme4 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+}

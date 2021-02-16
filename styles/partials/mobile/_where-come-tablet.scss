@@ -1,0 +1,19 @@
+/*Estilos de la seccion De donde venimos Diseño mobile exclusivo para tablets*/
+
+.where-come {
+    top: -20.44vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    img {
+        min-width: 400px;
+    }
+    .container-text {
+        width: 30%;
+    }
+    /*Media query para permitir la correcta visualizacion del texto*/
+    @media screen and (max-width:707px) {
+        .container-text {
+            width: 400px;
+        }
+    }
+}
