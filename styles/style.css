@@ -470,343 +470,9 @@ i {
   color: #060A24;
 }
 
-/*Diseño Responsive para movil*/
-@media screen and (max-width: 425px) {
-  /*Reglas basicas para algunas etiquetas en el diseño mobile*/
-  body {
-    min-width: 320px;
-  }
-  p {
-    font-size: 14px;
-  }
-  a {
-    font-size: 14px;
-  }
-  h2 {
-    font-size: 36px;
-    margin-left: 4.9%;
-  }
-  /*Estilos del header Diseño mobile*/
-  header {
-    height: 46px;
-  }
-  .navbar {
-    padding-top: 7.5px;
-  }
-  .navbar input {
-    display: block;
-    opacity: 0;
-    position: absolute;
-    width: 25px;
-    height: 27px;
-  }
-  .navbar span {
-    display: block;
-    width: 25px;
-    height: 2.5px;
-    margin-bottom: 6.5px;
-    background: #060A24;
-    z-index: 1;
-    -webkit-transform-origin: 3px 0px;
-            transform-origin: 3px 0px;
-    -webkit-transition: opacity 0.55s ease, -webkit-transform 0.5s ease;
-    transition: opacity 0.55s ease, -webkit-transform 0.5s ease;
-    transition: transform 0.5s ease, opacity 0.55s ease;
-    transition: transform 0.5s ease, opacity 0.55s ease, -webkit-transform 0.5s ease;
-  }
-  .navbar span:first-child {
-    -webkit-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
-  }
-  .navbar span:nth-last-child(2) {
-    -webkit-transform-origin: 0% 100%;
-            transform-origin: 0% 100%;
-  }
-  .navbar ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    display: none;
-  }
-  .navbar ul .li-active {
-    background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-  }
-  .navbar ul .li-active .active {
-    color: rgba(6, 10, 36, 0.56);
-  }
-  .navbar ul li {
-    height: -100px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-left: 16px;
-    background-color: #0000EC;
-  }
-  .navbar ul li:nth-last-child(4) {
-    position: absolute;
-    top: 46px;
-    left: 0px;
-    width: 100vw;
-  }
-  .navbar ul li:nth-last-child(4) a {
-    color: #ffff;
-  }
-  .navbar ul li:nth-last-child(3) {
-    position: absolute;
-    top: 122px;
-    left: 0px;
-    width: 100vw;
-  }
-  .navbar ul li:nth-last-child(3) a {
-    color: #ffff;
-  }
-  .navbar ul li:nth-last-child(2) {
-    position: absolute;
-    top: 198px;
-    left: 0px;
-    width: 100vw;
-  }
-  .navbar ul li:nth-last-child(2) a {
-    color: #ffff;
-  }
-  .navbar ul li:nth-last-child(1) {
-    position: absolute;
-    top: 274px;
-    left: 0px;
-    width: 100vw;
-  }
-  .navbar ul li:nth-last-child(1) a {
-    color: #ffff;
-  }
-  /*Animaciones y propiedades para el menu activo*/
-  @-webkit-keyframes display {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes display {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  input[type="checkbox"]:checked ~ ul {
-    display: block;
-  }
-  input[type="checkbox"]:checked ~ ul li {
-    height: auto;
-    -webkit-animation-name: display;
-            animation-name: display;
-    -webkit-animation-duration: 0.5s;
-            animation-duration: 0.5s;
-  }
-  input:checked ~ span {
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    transition-property: transform;
-    transition-property: transform, -webkit-transform;
-    -webkit-transition-duration: 0.5s;
-            transition-duration: 0.5s;
-    -webkit-transform: rotate(45deg) translate(2px, 1px);
-            transform: rotate(45deg) translate(2px, 1px);
-  }
-  input:checked ~ span:nth-last-child(2) {
-    -webkit-transform: rotate(-45deg) translate(1px, 0px);
-            transform: rotate(-45deg) translate(1px, 0px);
-  }
-  input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-            transform: rotate(0deg) scale(0.2, 0.2);
-  }
-  /*Estilos de la seccion Banner Diseño mobile*/
-  .banner {
-    margin-left: 4.9%;
-    margin-right: 4.9%;
-    margin-bottom: 7.3%;
-  }
-  .banner h1 {
-    font-size: 36px;
-  }
-  .banner p {
-    margin: 0;
-  }
-  .btn-more-info {
-    margin-top: 36px;
-    width: 225px;
-    height: 48px;
-    font-size: 16px;
-  }
-  .btn-more-info:hover {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  /*Estilos de la seccion Episodios Diseño mobile*/
-  .episodes .svg1 {
-    min-height: 64px;
-    height: 15vw;
-  }
-  .episodes .svg2 {
-    min-height: 50px;
-    height: 15vw;
-  }
-  .container-podcast {
-    margin-left: 4.9%;
-    margin-right: 4.9%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .container-podcast .podcast {
-    height: 250px;
-  }
-  /*Estilos de la seccion De Donde Venimos Diseño mobile*/
-  .where-come {
-    margin: 0;
-    height: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    top: -20vw;
-  }
-  .where-come img {
-    width: 100%;
-  }
-  .where-come .container-text {
-    margin-top: 0;
-    margin-right: 4.9%;
-  }
-  .where-come h2 {
-    margin-bottom: 8px;
-    line-height: 42px;
-  }
-  /*Estilos de la seccion Invitados Diseño mobile*/
-  .guests {
-    position: relative;
-    top: -10vw;
-  }
-  .galery {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .galery img {
-    width: 100%;
-    height: auto;
-  }
-  /*Estilos de la seccion Temas Diseño mobile*/
-  .themes {
-    top: -3vw;
-  }
-  .themes h2 {
-    margin-left: 4.9%;
-  }
-  .container-themes {
-    /*grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
-    gap: 13px;*/
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 4.9%;
-    margin-right: 4.9%;
-  }
-  img {
-    min-width: 104px;
-    width: 32.5vw;
-    height: 32.5vw;
-  }
-  .text-theme1,
-  .text-theme2,
-  .text-theme3,
-  .text-theme4 {
-    margin-bottom: 46px;
-  }
-  /*Estilos de la seccion Escuchar Podcast Diseño mobile*/
-  .hear-podcast svg {
-    height: 15vw;
-  }
-  .hear-podcast h2 {
-    text-align: center;
-    margin: 5% 4.9% 11.3% 4.9%;
-  }
-  .btn-hear-podcast {
-    width: 288px;
-    height: 48px;
-    font-size: 16px;
-  }
-  .btn-hear-podcast:hover {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  /*Estilos del Footer Diseño mobile*/
-  footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0;
-  }
-  footer p {
-    margin-bottom: 4.9%;
-  }
-  footer a:hover i {
-    background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  .container-social-networks {
-    width: 70.9%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  i {
-    width: 14px;
-    height: 28px;
-    color: #060A24;
-  }
-}
-
+/*Diseño responsive*/
 @media screen and (max-width: 768px) {
   /*Reglas basicas para algunas etiquetas en el diseño mobile*/
-  body {
-    min-width: 320px;
-  }
   p {
     font-size: 14px;
   }
@@ -1095,6 +761,149 @@ i {
 }
 
 @media screen and (max-width: 768px) and (max-width: 500px) {
+  /*Estilos de la seccion Temas Diseño mobile*/
+  .themes {
+    top: -3vw;
+  }
+  .themes h2 {
+    margin-left: 4.9%;
+  }
+  .container-themes {
+    /*grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 13px;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 4.9%;
+    margin-right: 4.9%;
+  }
+  img {
+    min-width: 104px;
+    width: 32.5vw;
+    height: 32.5vw;
+  }
+  .text-theme1,
+  .text-theme2,
+  .text-theme3,
+  .text-theme4 {
+    margin-bottom: 46px;
+  }
+  /*Estilos del Footer Diseño mobile*/
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  footer p {
+    margin-bottom: 4.9%;
+  }
+  footer a:hover i {
+    background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .container-social-networks {
+    width: 70.9%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  i {
+    width: 14px;
+    height: 28px;
+    color: #060A24;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 425px) {
+  /*Estilos de la seccion Episodios Diseño mobile*/
+  .episodes .svg1 {
+    min-height: 64px;
+    height: 15vw;
+  }
+  .episodes .svg2 {
+    min-height: 50px;
+    height: 15vw;
+  }
+  .container-podcast {
+    margin-left: 4.9%;
+    margin-right: 4.9%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container-podcast .podcast {
+    height: 250px;
+  }
+  /*Estilos de la seccion De Donde Venimos Diseño mobile*/
+  .where-come {
+    margin: 0;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: -20vw;
+  }
+  .where-come img {
+    min-width: 320px;
+    width: 320px;
+  }
+  .where-come .container-text {
+    min-width: 288px;
+    width: 90vw;
+    margin-top: 0;
+    margin-right: 4.9%;
+  }
+  .where-come h2 {
+    margin-bottom: 8px;
+    line-height: 42px;
+  }
+  /*Estilos de la seccion Invitados Diseño mobile*/
+  .guests {
+    position: relative;
+    top: -10vw;
+  }
+  .galery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .galery img {
+    width: 100%;
+    height: auto;
+  }
   /*Estilos de la seccion Temas Diseño mobile*/
   .themes {
     top: -3vw;

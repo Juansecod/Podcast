@@ -6,9 +6,12 @@
     flex-direction: column;
     top: -20vw;
     img {
-        width: 100%;
+        min-width: 320px;
+        width: 320px;
     }
     .container-text {
+        min-width: 288px;
+        width: 90vw;
         margin-top: 0;
         margin-right: 4.9%;
     }
