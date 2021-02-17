@@ -769,9 +769,6 @@ i {
     margin-left: 4.9%;
   }
   .container-themes {
-    /*grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
-    gap: 13px;*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -912,9 +909,6 @@ i {
     margin-left: 4.9%;
   }
   .container-themes {
-    /*grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
-    gap: 13px;*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
