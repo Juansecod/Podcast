@@ -719,7 +719,7 @@ i {
     font-size: 24px;
     text-align: center;
   }
-  img[src='./assets/img/icon3.svg'] {
+  img[src='./assets/img/themes-icons/icon3.svg'] {
     padding-top: 10px;
     -ms-grid-row: 3;
         grid-row-start: 3;
@@ -730,7 +730,7 @@ i {
         grid-row-start: 4;
     grid-row-end: 5;
   }
-  img[src='./assets/img/icon4.svg'] {
+  img[src='./assets/img/themes-icons/icon4.svg'] {
     padding-top: 10px;
     -ms-grid-row: 3;
         grid-row-start: 3;
